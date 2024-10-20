@@ -1,0 +1,28 @@
+.sortbutton{
+    height: 5vh;
+    width: 8vw;
+    color: #941B0F;
+    background: white;
+    border: 1px solid #9B9B9B;
+    border-radius: 5px;
+    opacity: 1;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+
+@media (max-width: 900px) {
+    .sortbutton {
+      height: 5vh;
+      width: 12vw;
+      font-size: 3vw;
+    }
+  
+    .sortbutton::after {
+      content: ""; /* This will remove any default content after the arrow */
+    }
+  
+    .sortbutton::before {
+      content: attr(data-sort); /* Keep only the arrow content */
+    }
+  }
+  

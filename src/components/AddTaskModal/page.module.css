@@ -1,0 +1,116 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .addtaskform {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 70vh;
+    width: 90vw; /* Flexible for smaller screens */
+    max-width: 500px; /* Keep the modal at a reasonable width */
+    z-index: 1001;
+  }
+  
+  .addtaskheading {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .addtaskheading2 {
+    color: black;
+    margin-bottom: 1%;
+    font-size: 14px;
+  }
+  
+  .modalActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .cancelButton, .submitButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 47%; /* Adjust button widths */
+  }
+  
+  .cancelButton {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  .submitButton {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  /* Adjust input fields width to match the combined width of buttons */
+  .titleinput, .addtaskdescription, .taskduedate, .addtaskpriority, .addtaskstatus {
+    width: calc(99%); /* Matches the combined width of both buttons */
+    height: 4vh;
+    color: black;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #9B9B9B !important;
+    margin: 1% 0%;
+    padding-left: 10px; /* Adds space between text and left border */
+    padding-top: 5px;
+  box-sizing: border-box;
+  }
+  
+  .addtaskdescription {
+    height: 17vh;
+  }
+  
+  .cancelButton {
+    color: #941B0F;
+    border: 1px solid #941B0F;
+    background: white;
+  }
+  
+  .submitButton {
+    background: #941B0F;
+    color: white;
+  }
+  
+  .taskformnavbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cross {
+    cursor: pointer;
+  }
+  
+  /* Media query to maintain responsiveness on smaller screens */
+  @media (max-width: 900px) {
+    .addtaskform {
+      margin-top: 15%;
+      width: 60vw;
+      max-width: none;
+      height: 67vh;
+    }
+  
+    .titleinput, .addtaskdescription, .taskduedate, .addtaskpriority, .addtaskstatus {
+      width: 100%;
+    }
+  
+    .cancelButton, .submitButton {
+      width: 48%;
+    }
+  }
+  

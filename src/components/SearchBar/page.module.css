@@ -1,0 +1,20 @@
+.inputcontainer{
+    height: 5vh !important;
+    width: 21vw;
+    background-color: white;
+    border: 1px solid #9B9B9B;
+    border-radius: 5px;
+    opacity: 1;
+    color: black;
+}
+
+.searchbox{
+    margin: 3%;
+}
+
+@media (max-width: 900px) {
+    .inputcontainer{
+        width: 45vw;
+        height: 4vw;
+    }
+}
