@@ -11,10 +11,9 @@
   height: 30px;
 }
 
-/* Media query to hide filter and show hamburger icon when screen width is less than 900px */
 @media (max-width: 900px) {
   .filer {
-    display: none; /* Hide the select dropdown */
+    display: none; 
   }
 
   .sortbtndown{
@@ -22,7 +21,7 @@
   }
 
   .hamburger {
-    display: block; /* Show hamburger icon */
+    display: block; 
     width: 32px;
     height: 25px;
     cursor: pointer;

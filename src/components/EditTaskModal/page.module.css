@@ -1,50 +1,49 @@
 .modalOverlay {
-    position: fixed; /* Fixes modal overlay to cover the entire viewport */
+    position: fixed; 
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    display: flex; /* Centers modal content */
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex; 
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Places overlay above other elements */
+    z-index: 1000; 
 }
 
 .modalContent {
-    background: white; /* White background for modal content */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Inner spacing */
-    width: 40vw; /* Set a fixed width for the modal */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background: white;
+    border-radius: 8px; 
+    padding: 20px; 
+    width: 40vw; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     height: 65vh;
-    position: relative; /* Allows positioning of children if needed */
+    position: relative;
 }
 
 .formGroup {
-    margin-bottom: 15px; /* Spacing between form groups */
+    margin-bottom: 15px;
     background-color: white;
     color: black;
 }
 
-.label { /* Use a class to ensure CSS module compatibility */
-    display: block; /* Block-level label */
-    margin-bottom: 5px; /* Space below label */
+.label { 
+    display: block; 
+    margin-bottom: 5px; 
 }
 
-/* Scoped selectors with .modalContent to avoid syntax errors */
 .modalContent input,
 .modalContent textarea,
 .modalContent select {
-    width: 100%; /* Full width for form fields */
-    padding: 8px; /* Inner spacing for comfort */
-    border: 1px solid #ccc; /* Light grey border */
-    border-radius: 4px; /* Rounded corners for input fields */
+    width: 100%;
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
 }
 
 .buttonGroup {
-    display: flex; /* Aligns buttons in a row */
-    justify-content: space-between; /* Space between buttons */
+    display: flex; 
+    justify-content: space-between;
 }
 
 .cancelButton {

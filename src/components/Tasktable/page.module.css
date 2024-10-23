@@ -1,33 +1,33 @@
 .completed {
-    background-color: #03A229; /* Light green */
-    color: white; /* Dark green for text */
-    border-radius: 18px; /* Rounded corners */
-    padding: 6px; /* Padding around the text */
-    text-align: center; /* Center the text */
+    background-color: #03A229; 
+    color: white; 
+    border-radius: 18px; 
+    padding: 6px; 
+    text-align: center;
     font-size: smaller;
 }
 
 .incomplete {
-    background-color: #F5D20E; /* Light yellow */
-    color: white; /* Dark yellow for text */
-    border-radius: 18px; /* Rounded corners */
-    padding: 5px; /* Padding around the text */
-    text-align: center; /* Center the text */
+    background-color: #F5D20E;
+    color: white;
+    border-radius: 18px;
+    padding: 5px;
+    text-align: center; 
 }
 
 .inprogress {
-    background-color: #FFA500; /* Orange color for "In Progress" */
-    color: white; /* White text */
-    border-radius: 18px; /* Rounded corners */
-    padding: 5px; /* Padding around the text */
-    text-align: center; /* Center the text */
+    background-color: #FFA500; 
+    color: white; 
+    border-radius: 18px; 
+    padding: 5px; 
+    text-align: center; 
 }
 
 .tasktable {
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid #941B0F; /* Keep bottom border for headers */
-    table-layout: fixed; /* Use fixed layout for consistent widths */
+    border: 1px solid #941B0F;
+    table-layout: fixed; 
 }
 
 .tasktable th, 
@@ -35,8 +35,8 @@
     padding: 10px;
     text-align: left;
     font-size: 16px;
-    border: none; /* Remove default border */
-    overflow: hidden; /* Prevent overflow */
+    border: none; 
+    overflow: hidden;
 }
 
 .tasktable th {
@@ -55,17 +55,16 @@
     word-wrap: break-word;
 }
 
-/* Alternate row colors between white and #FFF9F8 */
 .tasktable tbody tr:nth-child(even) {
-    background-color: #FFF9F8; /* Light background for even rows */
+    background-color: #FFF9F8;
 }
 
 .tasktable tbody tr:nth-child(odd) {
-    background-color: white; /* White background for odd rows */
+    background-color: white;
 }
 
 .tasktable tbody tr:hover {
-    background-color: #f1f1f1; /* Highlight row on hover */
+    background-color: #f1f1f1;
 }
 
 .tasktable button {
@@ -78,28 +77,24 @@
 }
 
 .tasktable button:first-of-type {
-    background-color: #4CAF50; /* Green for edit */
+    background-color: #4CAF50; 
     color: white;
 }
 
 .tasktable button:last-of-type {
-    background-color: #f44336; /* Red for delete */
+    background-color: #f44336; 
     color: white;
-}
-
-.expandedRow {
 }
 
 .expandedRow td {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Align items properly */
+    justify-content: space-between;
 }
 
-/* Style the down arrow, if needed */
 .arrow {
     cursor: pointer;
-    margin-left: auto; /* Pushes arrow to the right */
+    margin-left: auto;
 }
 
 .details {
@@ -111,48 +106,46 @@
 @media (max-width: 900px) {
     .tasktable {
         width: 100%;
-        display: block; /* Allow for scrollable content */
-        overflow-x: auto; /* Enable horizontal scrolling if needed */
+        display: block;
+        overflow-x: auto; 
     }
 
     .tasktable thead {
-        display: none; /* Hide headers in mobile view */
-
+        display: none;
     }
 
     .tasktable tbody {
-        width: 100%; /* Ensure tbody takes full width */
+        width: 100%; 
     }
 
     .tasktable tbody tr {
-        display: block; /* Stack rows */
-        border: 1px solid #ddd; /* Light grey border for clarity */
-        padding: 10px; /* Padding around the content */
+        display: block;
+        border: 1px solid #ddd; 
+        padding: 10px; 
         width: 95vw;
     }
 
     .tasktable td {
-        display: block; /* Stack cells vertically */
-        text-align: left; /* Align to left for better readability */
-        position: relative; /* Position for labels */
-        padding: 8px; /* Padding for each cell */
-        border: none; /* No border for cells */
+        display: block;
+        text-align: left; 
+        position: relative; 
+        padding: 8px;
+        border: none; 
     }
 
     .tasktable td.status::before {
-        display: flex; /* Use flex for the status label */
-        align-items: center; /* Align items vertically in the center */
-    }
-    /* Show labels for mobile using data attributes */
-    .tasktable td::before {
-        content: attr(data-label); /* Show the header before the data */
-        font-weight: bold; /* Make the label bold */
-        display: inline-block;
-        margin-right: 6%; /* Space between label and the data */
-        width: 120px; /* Add a width to ensure consistency in alignment */
+        display: flex; 
+        align-items: center;
     }
 
-    /* Expandable row details */
+    .tasktable td::before {
+        content: attr(data-label);
+        font-weight: bold; 
+        display: inline-block;
+        margin-right: 6%;
+        width: 120px;
+    }
+
     .task-details {
         display: none;
         padding: 10px;
@@ -165,11 +158,11 @@
 
     .tasktable .task-row {
         cursor: pointer;
-        background-color: #fceeee; /* Light pink */
+        background-color: #fceeee;
     }
 
     .tasktable .task-row:hover {
-        background-color: #ffd9d9; /* Hover effect for mobile */
+        background-color: #ffd9d9; 
     }
     .statusBadge {
         padding: 5px 10px;

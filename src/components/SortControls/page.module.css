@@ -18,11 +18,11 @@
     }
   
     .sortbutton::after {
-      content: ""; /* This will remove any default content after the arrow */
+      content: "";
     }
   
     .sortbutton::before {
-      content: attr(data-sort); /* Keep only the arrow content */
+      content: attr(data-sort); 
     }
   }
   
